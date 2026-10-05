@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2012, 2023 IBM Corporation and others.
+ * Copyright (c) 2012, 2026 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License 2.0
  * which accompanies this distribution, and is available at
@@ -28,10 +28,11 @@ import componenttest.topology.impl.LibertyServerFactory;
  * The classes specified in the @SuiteClasses annotation
  * below should represent all of the test cases for this FAT.
  */
-@SuiteClasses({ 
+@SuiteClasses({
                 PluginUtilityGenerateTest.class,
                 PluginUtilityMergeTest.class,
-                PluginUtilityEndpointMergeTest.class })
+                PluginUtilityEndpointMergeTest.class,
+                PluginAutoGenerateTest.class })
 public class FATSuite {
    
     static LibertyServer defaultServer = LibertyServerFactory.getLibertyServer("defaultServer");
